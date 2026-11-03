@@ -2,6 +2,8 @@
 
 A full-stack event ticket booking application. Users browse events, book tickets, and manage their bookings; admins manage the event catalog. The interesting part is the booking path: it is **oversell-safe under concurrent load**, guarded by a database pessimistic lock.
 
+**Live demo:** [bookmyevent-rho.vercel.app](https://bookmyevent-rho.vercel.app) (the API is on Render free tier, so the first request can take ~50 s to wake up)
+
 **Stack:** Java 17 · Spring Boot 3 · Spring Security (JWT) · Spring Data JPA · PostgreSQL / H2 · Caffeine cache · Next.js 14 · TypeScript · React
 
 ---
@@ -17,7 +19,6 @@ The app runs locally — backend on `:8080`, frontend on `:3000` (see [Running i
 | Admin | admin@bookmyevent.com | Admin@123 |
 | User  | demo@bookmyevent.com  | Demo@123  |
 
-> Tip: drop screenshots (home page, booking flow, Swagger UI) into a `screenshots/` folder and embed them here to make the README stand out.
 
 ---
 
